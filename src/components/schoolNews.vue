@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="w-full flex flex-col items-end">
-            <div class="w-7/8 flex gap-8 overflow-y ">
+            <div class="w-7/8 flex gap-8 overflow-y">
                 <newsCard />
                 <newsCard />
                 <newsCard />

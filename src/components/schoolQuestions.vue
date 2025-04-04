@@ -1,8 +1,8 @@
 <template>
     <div class="w-full flex justify-center bg-white py-10">
-        <div class="flex justify-between w-3/4 bg-gradient-to-r from-[#eaac3f] to-[#eee03c] px-8 rounded-lg">
+        <div class="flex justify-between  w-3/4 bg-gradient-to-r from-[#eaac3f] to-[#eee03c] px-8 rounded-lg">
             <!-- Left Side - Text Content -->
-            <div class="flex flex-col justify-center">
+            <div class="w-3/5 flex flex-col justify-center">
                 <h1 class="text-white text-2xl font-bold">
                     Остались вопросы по <span class="text-black">Qadam school?</span>
                 </h1>
@@ -29,7 +29,7 @@
             </div>
 
             <!-- Right Side - Decorative Images -->
-            <div class="flex flex-col justify-center gap-4">
+            <div class="w-1/5 flex flex-col justify-center gap-4">
                 <img src="../assets/question_vector_up.svg" alt="Question Up" />
                 <img src="../assets/question_vector_down.svg" alt="Question Down" />
             </div>

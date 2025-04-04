@@ -40,21 +40,52 @@ const toggleMenu = () => {
                 <nav class="p-6">
                     <ul class="space-y-4 text-lg">
                         <li class="font-bold flex gap-2">
-                            <img src="../assets/Polygon.svg" alt="">О школе
+                            <img src="../assets/Polygon.svg" alt="">
+                            <router-link to="/about" class="hover:text-orange-500" active-class="text-orange-500">О
+                                школе</router-link>
                         </li>
-                        <li class="text-orange-500 pl-6">Миссия школы</li>
-                        <li class="pl-6">Наша команда</li>
-                        <li class="pl-6">Родителям</li>
+                        <li class="pl-6">
+                            <router-link to="/mission" class="hover:text-orange-500"
+                                active-class="text-orange-500">Миссия школы</router-link>
+                        </li>
+                        <li class="pl-6">
+                            <router-link to="/team" class="hover:text-orange-500" active-class="text-orange-500">Наша
+                                команда</router-link>
+                        </li>
+                        <li class="pl-6">
+                            <router-link to="/parents" class="hover:text-orange-500"
+                                active-class="text-orange-500">Родителям</router-link>
+                        </li>
 
-                        <li class="font-bold mt-4 flex gap-2"><img src="../assets/Polygon.svg" alt="">Программа</li>
-                        <li class="pl-6">Академическая программа</li>
-                        <li class="pl-6">Дополнительное образование</li>
-                        <li class="pl-6">Система “Орда”</li>
+                        <li class="font-bold mt-4 flex gap-2">
+                            <img src="../assets/Polygon.svg" alt="">
+                            <router-link to="/program" class="hover:text-orange-500"
+                                active-class="text-orange-500">Программа</router-link>
+                        </li>
+                        <li class="pl-6">
+                            <router-link to="/academic" class="hover:text-orange-500"
+                                active-class="text-orange-500">Академическая программа</router-link>
+                        </li>
+                        <li class="pl-6">
+                            <router-link to="/extra" class="hover:text-orange-500"
+                                active-class="text-orange-500">Дополнительное образование</router-link>
+                        </li>
+                        <li class="pl-6">
+                            <router-link to="/orda" class="hover:text-orange-500" active-class="text-orange-500">Система
+                                “Орда”</router-link>
+                        </li>
 
-                        <li class="font-bold mt-4">Стоимость</li>
-                        <li class="font-bold">Поступление</li>
+                        <li class="font-bold mt-4">
+                            <router-link to="/price" class="hover:text-orange-500"
+                                active-class="text-orange-500">Стоимость</router-link>
+                        </li>
+                        <li class="font-bold">
+                            <router-link to="/admission" class="hover:text-orange-500"
+                                active-class="text-orange-500">Поступление</router-link>
+                        </li>
                     </ul>
                 </nav>
+
             </div>
 
             <!-- Bottom Section -->

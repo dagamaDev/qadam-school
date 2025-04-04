@@ -14,7 +14,7 @@
                     <div>
                         <h6 class="font-bold mb-3">Контакты</h6>
                         <div>
-                            <div class="flex gap-2">
+                            <div class="flex gap-2 mb-1">
                                 <img src="../assets/Group.svg" alt="">
                                 <p>+7 775 007 23 77</p>
                             </div>
