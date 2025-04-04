@@ -12,10 +12,20 @@
         </div>
         <div class="w-full flex flex-col items-end">
             <div class="w-7/8 flex gap-8 overflow-y">
-                <newsCard />
-                <newsCard />
-                <newsCard />
-                <newsCard />
+                <newsCard >
+                    <img class="w-full h-90 object-cover"   src="../assets/carousel_1.png" alt="">
+                </newsCard>
+
+                <newsCard >
+                    <img class="w-full h-90 object-cover"   src="../assets/carousel_2.png" alt="">
+                </newsCard>
+                <newsCard >
+                    <img class="w-full h-90 object-cover"   src="../assets/carousel_3.png" alt="">
+                </newsCard>
+
+                <newsCard >
+                    <img class="w-full h-90 object-cover"   src="../assets/carousel_4.png" alt="">
+                </newsCard>
             </div>
         </div>
     </div>

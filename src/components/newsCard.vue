@@ -1,7 +1,7 @@
 <template>
-    <div class="w-1/4 bg-white rounded-xl border border-[#D9DEE4]">
+    <a class="w-1/4 bg-white rounded-xl border border-[#D9DEE4]" href="https://www.instagram.com/qadamschool_bzh/">
         <div class="bg-[#F1F1F1] w-full h-90 flex items-center justify-center rounded-xl">
-            <img src="../assets/Vector.svg" alt="">
+            <slot></slot>
         </div>
         <div class="p-3">
             <p class="mb-6">Дәстүрге арналған ауызашарда оқушыларымыздың әкелерімен бас қостық! ...</p>
@@ -13,7 +13,7 @@
                 <p>01.01.2025</p>
             </div>
         </div>
-    </div>
+    </a>
 </template>
 <script setup>
 </script>
