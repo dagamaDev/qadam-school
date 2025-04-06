@@ -10,14 +10,14 @@ const toggleMenu = () => {
 
 <template>
     <!-- Header -->
-    <header class="absolute top-0 left-0 w-full px-8 py-6 flex items-center justify-between header">
+    <header class="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between header">
         <button class="border border-white text-white px-4 py-2 rounded-md">
             Портал для родителей
         </button>
 
         <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
 
-        <div class="flex items-center gap-6 text-white">
+        <div class="flex items-center gap-10 text-white">
             <p>+7 775 007 23 77</p>
             <p>RU ▼</p>
             <button @click="toggleMenu">

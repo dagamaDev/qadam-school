@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute w-3/4 flex justify-center bg-white rounded-2xl py-4">
+    <div class="absolute w-3/4 flex justify-evenly bg-white rounded-2xl py-4">
         <Card class="rounded-l-2xl" title="Международные стандарты" :items="[
             'IB PYP – международная учебная программа',
             'Предметы на английском языке',

@@ -19,7 +19,7 @@
   const offset = ref(0);
   let animationFrame;
   let imageWidth = 0;
-  const speed = 0.5; // pixels per frame (~30px/sec at 60fps)
+  const speed = 0.5;
   
   const images = [
     new URL("../assets/IMG_3425.png", import.meta.url).href,
