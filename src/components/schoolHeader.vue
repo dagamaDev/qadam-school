@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 
 const isMenuOpen = ref(false); // Track menu visibility
 
@@ -14,8 +15,9 @@ const toggleMenu = () => {
         <button class="border border-white text-white px-4 py-2 rounded-md">
             Портал для родителей
         </button>
-
-        <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
+        <RouterLink :to="'/'">
+            <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
+        </RouterLink>
 
         <div class="flex items-center gap-10 text-white">
             <p>+7 775 007 23 77</p>
