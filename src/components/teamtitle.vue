@@ -4,7 +4,7 @@
             <div class="flex gap-1">
                 <p>Главная /</p>
                 <div>
-                    <p>Миссия школы</p>
+                    <p class="border-b border-white">Миссия школы</p>
                     <p>Наша команда</p>
                     <p>Родителям</p>
                 </div>

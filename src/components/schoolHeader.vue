@@ -11,7 +11,8 @@ const toggleMenu = () => {
 
 <template>
     <!-- Header -->
-    <header class="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between header">
+    <header
+        class="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between header border-b border-white">
         <button class="border border-white text-white px-4 py-2 rounded-md">
             Портал для родителей
         </button>
@@ -43,8 +44,8 @@ const toggleMenu = () => {
                     <ul class="space-y-4 text-lg">
                         <li class="font-bold flex gap-2">
                             <img src="../assets/Polygon.svg" alt="">
-                            <router-link to="/about" class="hover:text-orange-500" active-class="text-orange-500">О
-                                школе</router-link>
+                            <p active-class="text-orange-500">О
+                                школе</p>
                         </li>
                         <li class="pl-6">
                             <router-link to="/mission" class="hover:text-orange-500"
@@ -58,11 +59,9 @@ const toggleMenu = () => {
                             <router-link to="/parents" class="hover:text-orange-500"
                                 active-class="text-orange-500">Родителям</router-link>
                         </li>
-
-                        <li class="font-bold mt-4 flex gap-2">
+                        <li class="font-bold flex gap-2">
                             <img src="../assets/Polygon.svg" alt="">
-                            <router-link to="/program" class="hover:text-orange-500"
-                                active-class="text-orange-500">Программа</router-link>
+                            <p active-class="text-orange-500">Программа</p>
                         </li>
                         <li class="pl-6">
                             <router-link to="/academic" class="hover:text-orange-500"
