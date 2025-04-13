@@ -1,6 +1,6 @@
 <template>
-    <a class="w-1/4 bg-white rounded-xl border border-[#D9DEE4]" href="https://www.instagram.com/qadamschool_bzh/">
-        <div class="bg-[#F1F1F1] w-full h-90 flex items-center justify-center rounded-xl">
+    <a class="min-w-[300px] max-w-[320px] bg-white rounded-xl border border-[#D9DEE4]" href="https://www.instagram.com/qadamschool_bzh/">
+        <div class="bg-[#F1F1F1] w-full h-96 flex items-center justify-center rounded-t-xl">
             <slot></slot>
         </div>
         <div class="p-3">
