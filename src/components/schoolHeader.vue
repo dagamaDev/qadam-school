@@ -81,12 +81,11 @@ const toggleMenu = () => {
                                 active-class="text-orange-500">Стоимость</router-link>
                         </li>
                         <li class="font-bold">
-                            <router-link to="/admission" class="hover:text-orange-500"
+                            <router-link to="/enrollment" class="hover:text-orange-500"
                                 active-class="text-orange-500">Поступление</router-link>
                         </li>
                     </ul>
                 </nav>
-
             </div>
 
             <!-- Bottom Section -->

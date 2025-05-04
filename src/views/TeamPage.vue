@@ -1,6 +1,7 @@
 <script setup>
+import teamInfo from '../components/teamInfo.vue';
 import schoolHeader from '../components/schoolHeader.vue';
-import teamtitle from '../components/teamtitle.vue';
+import teamTitle from '../components/teamTitle.vue';
 import missionAlso from '../components/missionAlso.vue';
 import schoolNews from '../components/schoolNews.vue';
 import schoolQuestions from '../components/schoolQuestions.vue';
@@ -11,7 +12,10 @@ import schoolFooter from '../components/schoolFooter.vue';
         <div class="relative">
             <schoolHeader />
             <img class="w-full object-cover" src="../assets/team_banner.png" alt="School Image">
-            <teamtitle />
+            <teamTitle />
+        </div>
+        <div class="my-20">
+            <teamInfo />
         </div>
         <div class="my-20">
             <missionAlso />
