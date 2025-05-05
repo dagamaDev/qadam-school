@@ -9,6 +9,18 @@ import ExtraPage from './views/ExtraPage.vue';
 import PricePage from './views/PricePage.vue';
 import EnrollmentPage from './views/EnrollmentPage.vue';
 import App from './App.vue'
+import ru from './locales/ru.json';
+import kz from './locales/kz.json';
+import { createI18n } from 'vue-i18n';
+const i18n = createI18n({
+    legacy: false,
+    locale: 'ru', 
+    fallbackLocale: 'en',
+    messages: {
+      ru,
+      kz,
+    },
+  });
 import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
     history: createWebHistory(),
@@ -49,4 +61,4 @@ const router = createRouter({
     ]
 })
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(i18n).mount('#app')

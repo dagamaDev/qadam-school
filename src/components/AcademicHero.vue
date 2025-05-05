@@ -1,6 +1,6 @@
 <template>
     <div :style="`background-image: url(${academicImage});`" class="w-full h-[70vh] flex justify-center w-3/4 bg-cover bg-no-repeat">
-        <schoolHeader />
+        <schoolHeader/>
         <div class="w-4/5 flex">
             <div class="w-full flex flex-col justify-end text-white gap-40 mt-26 py-16">
                 <div class="flex gap-1">

@@ -1,20 +1,36 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watch, onMounted } from "vue";
 import { RouterLink } from "vue-router";
+import { useI18n } from "vue-i18n";
 
-const isMenuOpen = ref(false); // Track menu visibility
-
+const isMenuOpen = ref(false);
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
+
+// i18n
+const { locale } = useI18n();
+const availableLangs = [
+    { code: "ru", label: "РУС" },
+    { code: "kz", label: "ҚАЗ" }
+];
+
+// Load default language from localStorage or fallback to 'ru'
+const selectedLang = ref(localStorage.getItem("lang") || "ru");
+locale.value = selectedLang.value;
+
+watch(selectedLang, (newLang) => {
+    locale.value = newLang;
+    localStorage.setItem("lang", newLang);
+});
 </script>
 
 <template>
     <!-- Header -->
     <header
-        class="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between header border-b border-white">
+        class="fixed top-0 left-0 w-full px-10 py-6 flex items-center justify-between header border-b border-white z-98">
         <button class="border border-white text-white px-4 py-2 rounded-md">
-            Портал для родителей
+            {{ $t('header.parent-portal') }}
         </button>
         <RouterLink :to="'/'">
             <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
@@ -22,7 +38,14 @@ const toggleMenu = () => {
 
         <div class="flex items-center gap-10 text-white">
             <p>+7 775 007 23 77</p>
-            <p>RU ▼</p>
+            <div class="relative">
+                <select v-model="selectedLang"
+                    class="bg-transparent border border-white text-white px-2 py-1 rounded-md focus:outline-none">
+                    <option v-for="lang in availableLangs" :key="lang.code" :value="lang.code" class="text-black">
+                        {{ lang.label }}
+                    </option>
+                </select>
+            </div>
             <button @click="toggleMenu">
                 <img class="w-8" src="../assets/burger.svg" alt="Menu">
             </button>

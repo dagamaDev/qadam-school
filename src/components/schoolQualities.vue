@@ -1,16 +1,16 @@
 <template>
     <div class="absolute w-3/4 flex justify-evenly bg-white rounded-2xl py-4">
-        <Card class="rounded-l-2xl" title="Международные стандарты" :items="[
-            'IB PYP – международная учебная программа',
-            'Предметы на английском языке',
-            'Учителя-фасилитаторы',
+        <Card class="rounded-l-2xl" :title="$t('main-standarts.title-internal')" :items="[
+            $t('main-standarts.text-PYP-internal'),
+            $t('main-standarts.text-subjects-internal'),
+            $t('main-standarts.text-teachers-internal'),
         ]">
             <img class="w-6" src="../assets/frame_15.svg" alt="">
         </Card>
         
         <div class="border-l border-[#D9DEE4] h-auto"/>
 
-        <Card title="Инновационные методы" :items="[
+        <Card :title="$t('main-standarts.title-innovation')" :items="[
             'Обучение через исследования и открытый опыт',
             'Игровой формат обучения',
             'Рефлексивный дневник',
@@ -21,7 +21,7 @@
         <div class="border-l border-[#D9DEE4] h-auto"/>
 
 
-        <Card class="rounded-r-2xl" title="Индивидуальный подход" :items="[
+        <Card class="rounded-r-2xl" :title="$t('main-standarts.title-individual')" :items="[
             'Выявление сильных сторон ребенка',
             'Индивидуальный план развития',  
             'Благоприятная среда для роста',
