@@ -7,7 +7,7 @@
                 </h2>
                 <button
                     class="bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
-                    Получить консультацию
+                    {{ $t('main-btn') }}
                 </button>
             </div>
 

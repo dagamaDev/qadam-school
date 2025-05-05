@@ -4,9 +4,9 @@
         <div class="w-full flex justify-center">
             <div class="w-3/4">
                 <div class="flex justify-between items-center mb-8">
-                    <h1 class="text-4xl font-bold">Новости</h1>
+                    <h1 class="text-4xl font-bold">{{ $t('news.title') }}</h1>
                     <button class="border border-black px-4 py-2 rounded-md">
-                        Посмотреть все новости
+                        {{ $t('news.all') }}
                     </button>
                 </div>
             </div>

@@ -3,10 +3,10 @@
         <div class="w-3/4">
             <!-- Header Section -->
             <div class="flex justify-between items-center mb-8">
-                <h1 class="text-4xl font-bold">Почему Qadam School?</h1>
+                <h1 class="text-4xl font-bold">{{$t('reason.title')}} Qadam School?</h1>
                 <button
                     class="bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
-                    Получить консультацию
+                    {{ $t('main-btn') }}
                 </button>
             </div>
 

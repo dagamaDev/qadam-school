@@ -117,7 +117,7 @@
                             <p>При 100% оплате за год - скидка 100 000 ₸ на обучение</p>
                             <button
                                 class="bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
-                                Получить консультацию
+                                {{ $t('main-btn') }}
                             </button>
                         </div>
                     </div>
