@@ -47,7 +47,7 @@
             <!-- Details Section -->
             <div class="bg-white flex flex-col sm:flex-row border border-gray-300 rounded-xl py-7">
                 <!-- Academic Features -->
-                <div class="w-full sm:w-1/2rounded-l-xl p-6  pt-8">
+                <div class="w-full sm:w-1/2 rounded-l-xl p-6  pt-8">
                     <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">{{ $t('reason.extra')
                         }}</span>
                     <h3 class="text-2xl font-bold mt-4">
