@@ -28,28 +28,40 @@ watch(selectedLang, (newLang) => {
 <template>
     <!-- Header -->
     <header
-        class="fixed top-0 left-0 w-full px-10 py-6 flex items-center justify-between header border-b border-white z-98">
-        <button class="border border-white text-white px-4 py-2 rounded-md">
-            {{ $t('header.parent-portal') }}
-        </button>
-        <RouterLink :to="'/'">
-            <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
+        class="fixed top-0 left-0 w-full px-6 py-4 md:px-10 md:py-6 flex items-center header justify-between border-b border-white z-50 bg-transparent">
+
+        <!-- Mobile: Only show logo and menu -->
+        <RouterLink to="/" class="md:hidden">
+            <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-8">
         </RouterLink>
 
-        <div class="flex items-center gap-10 text-white">
-            <p>+7 775 007 23 77</p>
-            <div class="relative">
-                <select v-model="selectedLang"
-                    class="bg-transparent border border-white text-white px-2 py-1 rounded-md focus:outline-none">
-                    <option v-for="lang in availableLangs" :key="lang.code" :value="lang.code" class="text-black">
-                        {{ lang.label }}
-                    </option>
-                </select>
-            </div>
-            <button @click="toggleMenu">
-                <img class="w-8" src="../assets/burger.svg" alt="Menu">
+        <!-- Desktop: Show full content -->
+        <div class="hidden md:flex items-center gap-4 w-full justify-between">
+            <button class="border border-white text-white px-4 py-2 rounded-md">
+                {{ $t('header.parent-portal') }}
             </button>
+
+            <RouterLink to="/">
+                <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-10">
+            </RouterLink>
+
+            <div class="flex items-center gap-10 text-white">
+                <p>+7 775 007 23 77</p>
+                <div class="relative">
+                    <select v-model="selectedLang"
+                        class="bg-transparent border border-white text-white px-2 py-1 rounded-md focus:outline-none">
+                        <option v-for="lang in availableLangs" :key="lang.code" :value="lang.code" class="text-black">
+                            {{ lang.label }}
+                        </option>
+                    </select>
+                </div>
+            </div>
         </div>
+
+        <!-- Menu Icon (always visible, aligned right) -->
+        <button @click="toggleMenu" class="md:hidden ml-auto">
+            <img class="w-8" src="../assets/burger.svg" alt="Menu">
+        </button>
     </header>
 
     <div class="z-99 fixed top-0 right-0 h-full w-1/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out rounded-l-xl"

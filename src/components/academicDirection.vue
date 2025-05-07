@@ -3,7 +3,7 @@
         <div class="w-3/4 py-10">
             <div class="flex justify-between items-center mb-10">
                 <h2 class="text-3xl font-bold">
-                    <span class="text-orange-500">3 Ключевых</span> направления обучения
+                    <span class="text-orange-500">{{$t('academic.directions.keys')}}</span> {{$t('academic.directions.title')}}
                 </h2>
                 <button
                     class="bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
@@ -13,52 +13,45 @@
 
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="bg-white rounded-xl shadow p-6 flex-1">
-                    <h3 class="font-bold text-3xl mb-4">Научно-математическое направление</h3>
+                    <h3 class="font-bold text-3xl mb-4">{{$t('academic.directions.math-title')}}</h3>
                     <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
-                    <p class="mb-2">Развитие логики и аналитического мышления с помощью предметов:</p>
+                    <p class="mb-2">{{$t('academic.directions.math-text')}}:</p>
                     <ul class="font-bold mb-4 space-y-1">
-                        <li>Математика</li>
-                        <li>Естествознание</li>
-                        <li>3D моделирование</li>
+                        <li>{{$t('academic.directions.math')}}</li>
+                        <li>{{$t('academic.directions.science')}}</li>
+                        <li>{{$t('academic.directions.modelling')}}</li>
                     </ul>
                     <p class="text-sm mb-2">
-                        Мы используем сингапурскую модель математики, которая позволяет ученикам понимать абстрактные
-                        понятия через наглядные примеры, переходя от реальных жизненных ситуаций к математическим
-                        уравнениям.
+                        {{$t('academic.directions.math-body')}}
                     </p>
                     <p class="text-sm">
-                        Наши ученики начинают изучение наук и математики на английском языке с 1 класса,
-                        что способствует
-                        развитию научной лексики на английском языке с раннего возраста.
+                        {{$t('academic.directions.math-footer')}}
                     </p>
                 </div>
 
                 <div class="bg-white rounded-xl shadow p-6 flex-1">
-                    <h3 class="font-bold text-3xl mb-4">Языковое направление</h3>
+                    <h3 class="font-bold text-3xl mb-4">{{$t('academic.directions.languages-title')}}</h3>
                     <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
-                    <p class="mb-2">Формирование языковых навыков и культурного мышления:</p>
+                    <p class="mb-2">{{$t('academic.directions.languages-text')}}:</p>
                     <ul class="font-bold mb-4 space-y-1">
-                        <li>Казахский язык</li>
-                        <li>Русский язык</li>
-                        <li>Английский язык</li>
+                        <li>{{$t('academic.directions.kaz')}}</li>
+                        <li>{{$t('academic.directions.rus')}}</li>
+                        <li>{{$t('academic.directions.eng')}}</li>
                     </ul>
                     <p class="text-sm">
-                        Начиная с 3 класса, все предметы, кроме казахского и русского языков, преподаются на английском.
-                        Это обеспечивает полное погружение в языковую среду и помогает нашим ученикам свободно говорить
-                        на трёх языках.
+                        {{$t('academic.directions.languages-body')}}
                     </p>
                 </div>
 
                 <!-- Проектное обучение -->
                 <div class="bg-white rounded-xl shadow p-6 flex-1">
-                    <h3 class="font-bold text-3xl mb-4">Проектное обучение</h3>
+                    <h3 class="font-bold text-3xl mb-4">{{$t('academic.directions.project-title')}}</h3>
                     <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
                     <p class="text-sm mb-2">
-                        Учащиеся выполняют проектные работы в процессе учебных занятий, что способствует развитию
-                        исследовательских навыков с раннего возраста.
+                        {{$t('academic.directions.project-text')}}
                     </p>
                     <p class="text-sm">
-                        Ученики 4-х классов проводят исследования в рамках ежегодной ярмарки исследований.
+                        {{$t('academic.directions.project-body')}}
                     </p>
                 </div>
             </div>

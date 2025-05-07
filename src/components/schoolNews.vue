@@ -5,7 +5,7 @@
             <div class="w-3/4">
                 <div class="flex justify-between items-center mb-8">
                     <h1 class="text-4xl font-bold">{{ $t('news.title') }}</h1>
-                    <button class="border border-black px-4 py-2 rounded-md">
+                    <button class="hidden md:block border border-black px-4 py-2 rounded-md">
                         {{ $t('news.all') }}
                     </button>
                 </div>

@@ -11,9 +11,13 @@
             <h5 class="text-lg">
                 {{ props.job }}
             </h5>
-            <p>
-                {{ props.description }}
-            </p>
+            <div class="flex flex-col gap-2">
+                <p>{{ $t('team.info.experience') }}:</p>
+                <p>
+                    {{ props.description }}
+                </p>
+            </div>
+
         </div>
     </div>
 </template>

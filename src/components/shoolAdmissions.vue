@@ -3,19 +3,23 @@
         <div class="w-3/4">
             <div class="flex justify-between items-center pb-4 border-b border-gray-300">
                 <h1 class="text-4xl font-bold">
-                    Как поступить в <span class="text-orange-500">Qadam School?</span>
+                    {{ $t('admissions.title') }}<span class="text-orange-500">Qadam School?</span>
                 </h1>
-                <button class="border border-black px-4 py-2 rounded-md font-semibold hover:bg-gray-100">
-                    Узнать подробнее
+                <button
+                    class="hidden md:block border border-black px-4 py-2 rounded-md font-semibold hover:bg-gray-100">
+                    {{ $t('reason.more') }}
                 </button>
             </div>
-            <div class="grid grid-cols-4 gap-4 mt-6">
-                <div v-for="(step, index) in steps" :key="index" class="text-start">
-                    <span class="px-3 py-1 bg-gradient-to-r from-orange-400 to-yellow-400 items-center justify-center text-3xl font-bold bg-yellow-500 rounded-full">
+            <div class="mt-6 flex flex-col space-y-6">
+                <div v-for="(step, index) in steps" :key="index" class="flex items-start space-x-4">
+                    <span
+                        class="flex-shrink-0 px-4 py-2 bg-gradient-to-r from-orange-400 to-yellow-400 text-white text-2xl font-bold rounded-full">
                         {{ index + 1 }}
                     </span>
-                    <h2 class="font-bold mt-4">{{ step.title }}</h2>
-                    <p class="text-gray-600 mt-3">{{ step.description }}</p>
+                    <div>
+                        <h2 class="font-bold text-lg">{{ step.title }}</h2>
+                        <p class="text-gray-600 mt-2">{{ step.description }}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -23,25 +27,27 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const steps = [
     {
-        title: "Подача заявки",
-        description: "Оставьте свои контактные данные на сайте или позвоните нам",
+        title: t('admissions.step1'),
+        description: t('admissions.step1-text'),
     },
     {
-        title: "Тестирование и собеседование",
-        description: "Менеджер организует удобное время для тестирования или собеседования",
+        title: t('admissions.step2'),
+        description: t('admissions.step2-text'),
     },
     {
-        title: "Документы и оплата",
-        description: "Подайте документы и внесите оплату",
+        title: t('admissions.step3'),
+        description: t('admissions.step3-text'),
     },
     {
-        title: "Поступление",
-        description: "Получите приглашение и станьте частью Qadam School",
+        title: t('admissions.step4'),
+        description: t('admissions.step4-text')
     }
 ];
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

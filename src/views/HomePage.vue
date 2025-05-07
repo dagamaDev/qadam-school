@@ -20,7 +20,7 @@ import schoolFooter from '../components/schoolFooter.vue';
         <div class="w-full flex justify-center absolute bottom-15">
             <schoolQualities />
         </div>
-        <div class="mt-60">
+        <div class="md:mt-60 mt-150">
             <schoolNews />
         </div>
         <div class="mt-20">
