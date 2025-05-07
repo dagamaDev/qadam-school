@@ -59,12 +59,12 @@ watch(selectedLang, (newLang) => {
         </div>
 
         <!-- Menu Icon (always visible, aligned right) -->
-        <button @click="toggleMenu" class="md:hidden ml-auto">
+        <button @click="toggleMenu" class="md:ml-10 ml-0">
             <img class="w-8" src="../assets/burger.svg" alt="Menu">
         </button>
     </header>
 
-    <div class="z-99 fixed top-0 right-0 h-full w-1/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out rounded-l-xl"
+    <div class="z-99 fixed top-0 right-0 h-full w-full md:w-1/3 w-1/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out rounded-l-xl"
         :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'">
 
         <div class="h-full flex flex-col justify-between">
