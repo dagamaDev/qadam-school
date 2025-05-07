@@ -5,7 +5,7 @@
             <div class="flex justify-between items-center mb-8">
                 <h1 class="text-4xl font-bold">{{ $t('reason.title') }} Qadam School?</h1>
                 <button
-                    class="bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                    class="hidden md:block bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -15,8 +15,8 @@
                 <div class="flex flex-col sm:flex-row">
                     <div
                         class="w-full sm:w-1/2 rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none bg-gradient-to-r from-[#eaac3f] to-[#eee03c] px-6 pt-8">
-                        <span
-                            class="bg-white px-3 py-1 rounded-full text-sm font-semibold">{{ $t('reason.method') }}</span>
+                        <span class="bg-white px-3 py-1 rounded-full text-sm font-semibold">{{ $t('reason.method')
+                            }}</span>
                         <h3 class="text-2xl font-bold mt-4">
                             {{ $t('reason.interesting') }}
                         </h3>
@@ -48,7 +48,8 @@
             <div class="bg-white flex flex-col sm:flex-row border border-gray-300 rounded-xl py-7">
                 <!-- Academic Features -->
                 <div class="w-full sm:w-1/2rounded-l-xl p-6  pt-8">
-                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">{{ $t('reason.extra') }}</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">{{ $t('reason.extra')
+                        }}</span>
                     <h3 class="text-2xl font-bold mt-4">
                         <span class="text-orange-500">{{ $t('reason.types') }}</span> {{ $t('reason.choose') }}
                     </h3>
@@ -72,6 +73,10 @@
                     <li>✦ {{ $t('reason.history') }}</li>
                 </ul>
             </div>
+            <button
+                class="my-4 w-full flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                {{ $t('main-btn') }}
+            </button>
         </div>
     </div>
 </template>

@@ -2,7 +2,7 @@
     <div class="w-full flex justify-center bg-[#383838]">
         <div class="w-3/4 mt-20">
             <div class="flex flex-col md:flex-row justify-between mb-10">
-                <div class="flex items-start">
+                <div class="flex items-start my-2 md:my-0">
                     <img src="../assets/logo_color_white_svg 1.svg" alt="logo">
                 </div>
                 <div class="text-white flex flex-col justify-between">
