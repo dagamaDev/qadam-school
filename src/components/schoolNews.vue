@@ -26,22 +26,22 @@
                 <!-- Scrollable container -->
                 <div ref="carousel" class="flex gap-8 overflow-x-auto scroll-smooth no-scrollbar">
                     <newsCard>
-                        <img class="w-full h-96 rounded-t-xl object-cover" src="../assets/carousel_1.png" alt="">
+                        <img class="w-full h-full rounded-t-xl object-cover" src="../assets/carousel_1.png" alt="">
                     </newsCard>
                     <newsCard>
-                        <img class="w-full h-96 object-cover rounded-t-xl" src="../assets/carousel_2.png" alt="">
+                        <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_2.png" alt="">
                     </newsCard>
                     <newsCard>
-                        <img class="w-full h-96 object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
+                        <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
                     </newsCard>
                     <newsCard>
-                        <img class="w-full h-96 object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
+                        <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
                     </newsCard>
                     <newsCard>
-                        <img class="w-full h-96 object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
+                        <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
                     </newsCard>
                     <newsCard>
-                        <img class="w-full h-96 object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
+                        <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
                     </newsCard>
                 </div>
 

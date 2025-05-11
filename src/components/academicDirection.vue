@@ -1,12 +1,12 @@
 <template>
     <div class="w-full flex justify-center">
-        <div class="w-3/4 py-10">
+        <div class="w-full md:w-3/4 py-10 px-4 md:px-0">
             <div class="flex justify-between items-center mb-10">
                 <h2 class="text-3xl font-bold">
                     <span class="text-orange-500">{{$t('academic.directions.keys')}}</span> {{$t('academic.directions.title')}}
                 </h2>
                 <button
-                    class="bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                    class="hidden md:flex bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -54,6 +54,10 @@
                         {{$t('academic.directions.project-body')}}
                     </p>
                 </div>
+                <button
+                    class="flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                    {{ $t('main-btn') }}
+                </button>
             </div>
         </div>
     </div>

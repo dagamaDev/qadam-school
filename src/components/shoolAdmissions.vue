@@ -10,7 +10,7 @@
                     {{ $t('reason.more') }}
                 </button>
             </div>
-            <div class="mt-6 flex flex-col md:flex-row space-y-6">
+            <div class="mt-6 flex flex-col md:flex-row md:gap-2 space-y-6">
                 <div v-for="(step, index) in steps" :key="index" class="flex items-start space-x-4">
                     <span
                         class="flex-shrink-0 px-4 py-2 bg-gradient-to-r from-orange-400 to-yellow-400 text-white text-2xl font-bold rounded-full">

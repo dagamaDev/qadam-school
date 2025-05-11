@@ -1,69 +1,73 @@
 <template>
     <div class="w-full flex justify-center">
-        <div class="bg-white p-8 w-3/4">
+        <div class="bg-white md:p-8 p-1 w-full md:w-3/4 px-4 md:px-0">
             <div>
-                <h1 class="text-3xl font-bold">
-                    Как поступить в Qadam School?
-                </h1>
+                <h1 class="text-3xl font-bold">Как поступить в Qadam School?</h1>
                 <p>Мы сделали процесс поступления простым и удобным!</p>
             </div>
-            <div class="flex gap-6 mt-8">
+            <div class="flex flex-col gap-10 mt-8">
+                <!-- Step Component -->
+                <div class="w-full flex items-start gap-6">
+                    <div class="hidden md:block text-[#E87C43] text-8xl font-bold w-20 text-center">1</div>
+                    <div class="bg-[#F3F5F8] flex flex-col gap-4 p-6 rounded-md flex-1">
+                        <div class="flex items-start gap-2">
+                            <h3 class="block md:hidden text-2xl md:text-3xl font-bold text-[#E87C43]">1.</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold">{{ $t('enrollment.info.request-title') }}</h3>
+                        </div>
 
-                <div class="w-1/3 flex flex-col gap-4 ">
-                    <div class="flex items-center justify-center gap-2">
-                        <h1 class="text-8xl font-bold text-[#E87C43]">1</h1>
-                    </div>
-                    <div class="bg-[#F3F5F8] flex flex-col items-center gap-4 p-4">
-                        <h3 class="text-3xl font-bold">Подача заявки на сайте или по телефону</h3>
-                        <p>Оставьте свои контактные данные на сайте или позвоните нам – мы ответим на все ваши вопросы и
-                            поможем на каждом этапе.</p>
+                        <div class="border-b border-[#D9DEE4] w-full" />
+                        <p>
+                            {{ $t('enrollment.info.request-text') }}
+                        </p>
                         <button
-                            class="bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
-                            Подать заявку
+                            class="w-full md:w-auto bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded self-start">
+                            {{ $t('enrollment.info.request-btn') }}
                         </button>
                     </div>
-
                 </div>
-                <div class="w-1/3 flex flex-col gap-4">
-                    <div class="flex items-center justify-center gap-2">
-                        <h1 class="text-8xl font-bold text-[#E87C43]">2</h1>
-                    </div>
-                    <div class="bg-[#F3F5F8] flex flex-col gap-16 p-4">
-                        <div class="flex flex-col gap-4">
-                            <h3 class="text-3xl font-bold">Запись на тестирование и собеседование</h3>
 
-                            <p>Наш менеджер организует удобное время для тестирования
-                                и собеседования.</p>
+                <!-- Step 2 -->
+                <div class="w-full flex items-start gap-6">
+                    <div class="hidden md:block text-[#E87C43] text-8xl font-bold w-20 text-center">2</div>
+                    <div class="bg-[#F3F5F8] flex flex-col gap-4 p-6 rounded-md flex-1">
+                        <div class="flex items-start gap-2">
+                            <h3 class="block md:hidden text-2xl md:text-3xl font-bold text-[#E87C43]">2.</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold">{{ $t('enrollment.info.record-title') }}</h3>
                         </div>
-                        <div class="flex flex-col gap-4">
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-start gap-2">
-                                    <img class="w-4 h-4 mt-1" src="../assets/enrollment-1.svg" alt="arrow">
-                                    <p>Собеседование для детей поступающих в 1 класс.</p>
-                                </div>
-                                <div class="flex items-start gap-2">
-                                    <img class="w-4 h-4 mt-1" src="../assets/enrollment-1.svg" alt="arrow">
-                                    <p>Тестирование для учащихся 2 класса и старше проводится по двум предметам:
-                                        математика и английский язык.</p>
-                                </div>
-                                <div class="flex items-start gap-2">
-                                    <p class="ml-6">Собеседование для детей поступающих в 1 класс.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="border-b border-[#D9DEE4] w-full" />
+                        <p>
+                            {{ $t('enrollment.info.record-text') }}
+                        </p>
+                        <ul class="flex flex-col gap-2 pl-2">
+                            <li class="flex items-start gap-2">
+                                <img class="w-4 h-4 mt-1" src="../assets/enrollment-1.svg" alt="arrow" />
+                                <span>{{ $t('enrollment.info.record-child') }}</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img class="w-4 h-4 mt-1" src="../assets/enrollment-1.svg" alt="arrow" />
+                                <span>
+                                    {{ $t('enrollment.info.record-child-2') }}
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="w-1/3 flex flex-col gap-4">
-                    <div class="flex items-center justify-center gap-2">
-                        <h1 class="text-8xl font-bold text-[#E87C43]">3</h1>
-                    </div>
-                    <div class="bg-[#F3F5F8] flex flex-col gap-4 p-4">
-                        <h3 class="text-3xl font-bold">Подать документы и произвести оплату</h3>
 
-                        <p>После успешного прохождения тестирования нужно предоставить необходимые документы и
-                            произвести оплату, чтобы гарантировать место в классе.</p>
+                <!-- Step 3 -->
+                <div class="w-full flex items-start gap-6">
+                    <div class="hidden md:block text-[#E87C43] text-8xl font-bold w-20 text-center">3</div>
+                    <div class="bg-[#F3F5F8] flex flex-col gap-4 p-6 rounded-md flex-1">
+                        <div class="flex items-start gap-2">
+                            <h3 class="block md:hidden text-2xl md:text-3xl font-bold text-[#E87C43]">3.</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold">{{ $t('enrollment.info.documents-title') }}</h3>
+                        </div>
+                        <div class="border-b border-[#D9DEE4] w-full" />
+                        <p>
+                            {{ $t('enrollment.info.documents-text') }}
+                        </p>
                         <h3 class="uppercase font-bold text-[#E9834E]">
-                            Станьте частью Qadam School
+                            {{ $t('enrollment.info.documents-footer') }}
+
                         </h3>
                     </div>
                 </div>

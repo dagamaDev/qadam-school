@@ -1,29 +1,40 @@
 <template>
-    <div :style="`background-image: url(${priceImage});`"
-        class="w-full h-[70vh] flex justify-center w-3/4 bg-center bg-no-repeat">
-        <schoolHeader />
-        <div class="w-4/5 flex">
-            <div class="w-full flex flex-col justify-end text-white gap-40 mt-26 py-16">
-                <div class="flex gap-1">
-                    <p>{{ $t('globalWords.main') }} /</p>
+    <div class="relative w-full h-[70vh] flex justify-center">
+        <div :style="`background-image: url(${priceImage});`"
+            class="absolute inset-0 w-full h-full bg-center bg-no-repeat brightness-50 z-0"></div>
+
+        <div class="relative z-10 w-3/4">
+            <schoolHeader />
+            <div class="flex">
+                <div class="w-full flex flex-col justify-end text-white gap-20 md:gap-30 mt-30 py-6">
                     <div>
-                        <p class="border-b border-white">{{ $t('academic.hero.title') }}</p>
-                        <p>{{ $t('extra.hero.title') }}</p>
-                        <p>Система “Орда”</p>
+                        <p class="hidden md:flex">← {{ $t('globalWords.main') }}</p>
+                        <p class="md:hidden flex">← {{ $t('globalWords.main-adaptive') }}</p>
                     </div>
-                </div>
-                <div class="flex justify-between">
-                    <h1 class="text-7xl font-bold">{{$t('payment.hero.title')}}</h1>
-                    <div class="flex gap-2 items-center">
-                        <img class="w-15 h-15" src="../assets/insta_white.svg" alt="">
-                        <img class="w-15 h-15" src="../assets/whatsup_white.svg" alt="">
-                        <img class="w-15 h-15" src="../assets/youtube_white.svg" alt="">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-4">
+                            <h1 class="text-4xl md:text-7xl font-bold">
+                                {{ $t('payment.hero.title') }} 
+                            </h1>
+                            <div class="w-full border-b border-white"></div>
+                            <div class="flex justify-between items-center">
+                                <p>{{$t('enrollment.hero.title')}}</p><img src="../assets/arrow-right.svg"
+                                    alt="arrow-right">
+                            </div>
+                            <div class="w-full border-b border-white"></div>
+                        </div>
+                        <div class="hidden md:flex gap-2 items-center">
+                            <img class="w-15 h-15" src="../assets/insta_white.svg" alt="">
+                            <img class="w-15 h-15" src="../assets/whatsup_white.svg" alt="">
+                            <img class="w-15 h-15" src="../assets/youtube_white.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
 <script setup>
 import schoolHeader from '../components/schoolHeader.vue';
 import priceImage from '../assets/price-1.jpg';

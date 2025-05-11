@@ -11,7 +11,6 @@ import schoolFooter from '../components/schoolFooter.vue';
     <div>
         <div class="relative">
             <schoolHeader />
-            <img class="w-full object-cover" src="../assets/team_banner.png" alt="School Image">
             <teamHeader /> 
         </div>
         <div class="my-20">

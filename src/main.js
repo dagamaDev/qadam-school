@@ -14,13 +14,13 @@ import kz from './locales/kz.json';
 import { createI18n } from 'vue-i18n';
 const i18n = createI18n({
     legacy: false,
-    locale: 'ru', 
+    locale: 'ru',
     fallbackLocale: 'en',
     messages: {
-      ru,
-      kz,
+        ru,
+        kz,
     },
-  });
+});
 import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
     history: createWebHistory(),
@@ -58,7 +58,21 @@ const router = createRouter({
             component: EnrollmentPage
         },
 
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth',
+            }
+        } else {
+            return { top: 0 }
+        }
+    }
 })
 
 createApp(App).use(router).use(i18n).mount('#app')
+
+
