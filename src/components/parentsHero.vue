@@ -5,22 +5,27 @@
         <div class="w-4/5 flex">
             <div class="w-full flex flex-col justify-end text-white gap-14 md:gap-30 mt-26 py-6">
                 <div>
-                    <p class="hidden md:flex">← {{ $t('globalWords.main') }}</p>
-                    <p class="md:hidden flex">← {{ $t('globalWords.main-adaptive') }}</p>
+                    <p @click="router.go(-1)" class="hidden md:flex cursor-pointer">← {{ $t('globalWords.main') }}</p>
+                    <p @click="router.go(-1)" class="md:hidden flex cursor-pointer">← {{ $t('globalWords.main-adaptive') }}</p>
                 </div>
                 <div class="flex justify-between">
                     <div class="flex flex-col gap-4">
 
                         <h1 class="text-6xl md:text-7xl font-bold">{{ $t('parents.hero.title') }}</h1>
                         <div class="w-full border-b border-white"></div>
-                        <div class="flex justify-between items-center">
-                            <p>{{ $t('team.hero.title') }}</p><img src="../assets/arrow-right.svg" alt="arrow-right">
-                        </div>
+                        <router-link to="/team">
+                            <div class="flex justify-between items-center">
+                                <p>{{ $t('team.hero.title') }}</p><img src="../assets/arrow-right.svg"
+                                    alt="arrow-right">
+                            </div>
+                        </router-link>
                         <div class="w-full border-b border-white"></div>
-                        <div class="flex justify-between items-center">
-                            <p>{{ $t('parents.hero.title') }}</p>
-                            <img src="../assets/arrow-right.svg" alt="arrow-right">
-                        </div>
+                        <router-link to="/parents">
+                            <div class="flex justify-between items-center">
+                                <p>{{ $t('parents.hero.title') }}</p>
+                                <img src="../assets/arrow-right.svg" alt="arrow-right">
+                            </div>
+                        </router-link>
                         <div class="w-full border-b border-white"></div>
                     </div>
                     <div class="hidden md:flex gap-2 items-center">
@@ -36,4 +41,6 @@
 <script setup>
 import schoolHeader from './schoolHeader.vue';
 import parentsImage from '../assets/parents-1.png';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 </script>
