@@ -8,6 +8,7 @@ import AcademicPage from './views/AcademicPage.vue';
 import ExtraPage from './views/ExtraPage.vue';
 import PricePage from './views/PricePage.vue';
 import EnrollmentPage from './views/EnrollmentPage.vue';
+import OrdaPage from './views/OrdaPage.vue';
 import App from './App.vue'
 import ru from './locales/ru.json';
 import kz from './locales/kz.json';
@@ -57,7 +58,10 @@ const router = createRouter({
             path: '/enrollment',
             component: EnrollmentPage
         },
-
+        {
+            path: '/orda',
+            component: OrdaPage
+        }
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
