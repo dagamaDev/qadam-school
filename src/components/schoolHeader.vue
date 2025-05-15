@@ -79,20 +79,18 @@ watch(selectedLang, (newLang) => {
                     <ul class="space-y-4 text-lg">
                         <li class="font-bold flex gap-2">
                             <img src="../assets/Polygon.svg" alt="">
-                            <p active-class="text-orange-500">О
-                                школе</p>
+                            <p active-class="text-orange-500">{{ $t('mission.info.about') }}</p>
                         </li>
                         <li class="pl-6">
                             <router-link to="/mission" class="hover:text-orange-500"
-                                active-class="text-orange-500">Миссия школы</router-link>
+                                active-class="text-orange-500">{{ $t('mission.hero.title') }}</router-link>
                         </li>
                         <li class="pl-6">
-                            <router-link to="/team" class="hover:text-orange-500" active-class="text-orange-500">Наша
-                                команда</router-link>
+                            <router-link to="/team" class="hover:text-orange-500" active-class="text-orange-500">{{ $t('team.hero.title') }}</router-link>
                         </li>
                         <li class="pl-6">
                             <router-link to="/parents" class="hover:text-orange-500"
-                                active-class="text-orange-500">Родителям</router-link>
+                                active-class="text-orange-500">{{ $t('parents.hero.title') }}</router-link>
                         </li>
                         <li class="font-bold flex gap-2">
                             <img src="../assets/Polygon.svg" alt="">
@@ -100,11 +98,11 @@ watch(selectedLang, (newLang) => {
                         </li>
                         <li class="pl-6">
                             <router-link to="/academic" class="hover:text-orange-500"
-                                active-class="text-orange-500">Академическая программа</router-link>
+                                active-class="text-orange-500">{{ $t('academic.hero.title') }}</router-link>
                         </li>
                         <li class="pl-6">
                             <router-link to="/extra" class="hover:text-orange-500"
-                                active-class="text-orange-500">Дополнительное образование</router-link>
+                                active-class="text-orange-500"> {{ $t('extra.hero.title') }}</router-link>
                         </li>
                         <li class="pl-6">
                             <router-link to="/orda" class="hover:text-orange-500" active-class="text-orange-500">Система
@@ -113,11 +111,11 @@ watch(selectedLang, (newLang) => {
 
                         <li class="font-bold mt-4">
                             <router-link to="/price" class="hover:text-orange-500"
-                                active-class="text-orange-500">Стоимость</router-link>
+                                active-class="text-orange-500">{{ $t('payment.hero.title') }}</router-link>
                         </li>
                         <li class="font-bold">
                             <router-link to="/enrollment" class="hover:text-orange-500"
-                                active-class="text-orange-500">Поступление</router-link>
+                                active-class="text-orange-500">{{ $t('admissions.hero.title') }}</router-link>
                         </li>
                     </ul>
                 </nav>
