@@ -27,7 +27,7 @@
                             <div class="w-full border-b border-white"></div>
                             <router-link to="/orda">
                                 <div class="flex justify-between items-center">
-                                    <p>Система «Орда»</p>
+                                    <p>{{ $t('orda.info.title') }}</p>
                                     <img src="../assets/arrow-right.svg" alt="arrow-right">
                                 </div>
                             </router-link>

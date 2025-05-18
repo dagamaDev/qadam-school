@@ -4,25 +4,26 @@
             <!-- Text Section -->
             <div class="flex-1 max-w-xl">
                 <h2 class="text-2xl font-bold">
-                    Каждый ученик, с 1 по 7 класс, становится участником одной из четырёх Орд
+                    {{$t('orda.group.title')}}
                 </h2>
                 <p class="mt-4 text-gray-700">
-                    Эти Орды названы в честь символов силы, мудрости и исторического единства казахского народа.
+                    {{$t('orda.group.symbol')}}
                 </p>
                 <p class="mt-4 text-gray-700">
-                    Орда становится для ребёнка второй семьёй: в неё входят ученики из разных классов и возрастов.
+                    {{$t('orda.group.family')}}
                 </p>
                 <p class="mt-4 text-gray-700">
-                    Чтобы сохранить дух семейного единства, дети из одной семьи всегда находятся в одной Орде.
+                    {{$t('orda.group.save')}}
+
                 </p>
             </div>
 
             <!-- 2x2 Grid Section -->
             <div class="flex-1 grid grid-cols-2 gap-4">
-                <div class="bg-white h-48 shadow rounded-md"></div>
-                <div class="bg-white h-48 shadow rounded-md"></div>
-                <div class="bg-white h-48 shadow rounded-md"></div>
-                <div class="bg-white h-48 shadow rounded-md"></div>
+                <img src="../assets/orda-4.png" alt="">
+                <img src="../assets/orda-3.png" alt="">
+                <img src="../assets/orda-2.png" alt="">
+                <img src="../assets/orda-1.png" alt="">
             </div>
         </div>
     </div>

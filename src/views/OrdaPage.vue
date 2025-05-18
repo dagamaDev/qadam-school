@@ -6,13 +6,14 @@ import ordaReason from '../components/ordaReason.vue';
 import schoolNews from '../components/schoolNews.vue';
 import schoolQuestions from '../components/schoolQuestions.vue';
 import schoolFooter from '../components/schoolFooter.vue';
-import missionAlso from '../components/missionAlso.vue';
+import ordaSystem from '../components/ordaSystem.vue';
+import ordaMore from '../components/ordaMore.vue';
 </script>
 
 <template>
     <div>
         <ordaHero />
-        <div class="bg-white pt-20">
+        <div class="bg-white pt-10">
             <ordaInfo />
         </div>
 
@@ -22,8 +23,13 @@ import missionAlso from '../components/missionAlso.vue';
         <div class="bg-white mt-20 pb-20">
             <ordaReason />
         </div>
+        <div>
+            <ordaSystem/>
+        </div>
+        <div>
+            <ordaMore/>
+        </div>
         <div class="my-20">
-            <missionAlso />
             <schoolNews />
         </div>
         <div class="bg-white">

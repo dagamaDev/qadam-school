@@ -5,7 +5,6 @@ import missionAims from '../components/missionAims.vue';
 import schoolNews from '../components/schoolNews.vue';
 import schoolQuestions from '../components/schoolQuestions.vue';
 import schoolFooter from '../components/schoolFooter.vue';
-import missionAlso from '../components/missionAlso.vue';
 </script>
 
 <template>
@@ -25,7 +24,6 @@ import missionAlso from '../components/missionAlso.vue';
             </div>
         </div>
         <div class="my-20">
-            <missionAlso/>
             <schoolNews />
         </div>
         <div class="bg-white">

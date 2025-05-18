@@ -1,22 +1,25 @@
 <template>
-    <div class="w-full flex justify-center">
-        <div class="w-3/4">
-            <h3 class="text-2xl font-bold mb-8">{{ $t('team.info.founder') }}</h3>
-            <div class="flex flex-col md:flex-row gap-10 mb-10">
-                <img class="w-110 h-100 rounded-xl" src="../assets/team-main.jpg" alt="">
-                <div class="flex flex-col justify-evenly gap-4 p-10">
-                    <div>
-                        <button
-                            class="bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
-                            {{ $t('team.info.founder') }}
-                        </button>
+    <div class="w-full flex justify-center bg-white pt-10">
+        <div class="w-full p-4 md:p-0 md:w-3/4 ">
+            <h3 class="text-4xl font-bold mb-8">{{ $t('team.info.founder') }}</h3>
+            <div class="w-full md:w-1/2 bg-[#F3F5F8] flex flex-col gap-4 mb-10 p-4 rounded-xl">
+                <div class="flex flex-col md:flex-row justify-evenly gap-4">
+                    <img class="w-1/2 rounded-xl" src="../assets/team-main.png" alt="">
+                    <div class="flex flex-col justify-center">
+                        <h4 class="uppercase text-[#E87C43] font-semibold text-sm">{{ $t('team.info.founder') }}</h4>
+                        <h3 class="text-2xl font-bold">Сейсенбай Шакарим</h3>
+                        <p>{{ $t('team.info.founder-title') }}</p>
                     </div>
-                    <h4 class="text-[#E87C43] font-bold text-xl">{{ $t('team.info.founder-title') }}</h4>
-                    <h3 class="text-2xl font-bold">Сейсенбай Шакарим</h3>
-                    <div class="flex flex-col gap-2">
-                        <p>{{ $t('team.info.experience') }}:</p>
-                        <p>{{ $t('team.info.founder-jobs') }}</p>
-                    </div>
+                </div>
+                <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
+                <div class="flex flex-col">
+                    <p>{{ $t('team.info.experience') }}:</p>
+                    <ul class="list-disc p-4">
+                        <li>Руководитель Управления образования г. Астана</li>
+                        <li>Академический директор Astana Garden School</li>
+                        <li>Директор школы-лицей #54</li>
+                        <li>Работа в РФМШ, НИШ и БИЛ</li>
+                    </ul>
                 </div>
             </div>
             <h1 class="text-4xl font-bold my-8">{{ $t('team.info.filial-2') }}</h1>
@@ -24,25 +27,23 @@
             <div class="flex flex-col md:flex-row justify-between gap-20">
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.director')" :name="'Борлыкбаева Райхан'"
                     :job="t('team.info.director-title')" :description="t('team.info.director-jobs')">
-                    <img class="w-110 h-154 rounded-xl" src="../assets/team-5.jpg" alt="">
+                    <img class="w-full rounded-xl" src="../assets/team-5.png" alt="">
                 </jobCard>
-                <jobCard class="w-full md:w-1/2" :position="t('team.info.co-study-director')" :name="'Каримова Динара Тахировна'"
-                    :job="t('team.info.co-study-director-title')"
+                <jobCard class="w-full md:w-1/2" :position="t('team.info.co-study-director')"
+                    :name="'Каримова Динара Тахировна'" :job="t('team.info.co-study-director-title')"
                     :description="t('team.info.co-study-director-jobs')">
-                    <img class="w-110 h-150 rounded-xl" src="../assets/team-4.jpg" alt="">
+                    <img class="w-full rounded-xl" src="../assets/team-4.png" alt="">
                 </jobCard>
             </div>
             <h1 class="text-4xl font-bold my-8">{{ $t('team.info.filial-1') }}</h1>
             <div class="flex flex-col md:flex-row justify-between gap-20 mb-10">
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.director')" :name="'Абитаева Малика'"
-                    :job="$t('team.info.founder-title')"
-                    :description="t('team.info.director-jobs-2')">
-                    <img class="w-110 h-154 rounded-xl" src="../assets/team-2.jpg" alt="">
+                    :job="$t('team.info.founder-title')" :description="t('team.info.director-jobs-2')">
+                    <img class="w-full rounded-xl" src="../assets/team-2.png" alt="">
                 </jobCard>
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.co-director')" :name="'Тенел Колбайкызы'"
-                    :job="t('team.info.co-director-title')"
-                    :description="t('team.info.co-director-jobs')">
-                    <img class="w-110 h-154 rounded-xl" src="../assets/team-3.jpg" alt="">
+                    :job="t('team.info.co-director-title')" :description="t('team.info.co-director-jobs')">
+                    <img class="w-full rounded-xl" src="../assets/team-3.png" alt="">
                 </jobCard>
             </div>
         </div>

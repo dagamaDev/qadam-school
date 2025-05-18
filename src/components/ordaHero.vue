@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex justify-between">
                     <div class="flex flex-col gap-4">
-                        <h1 class="text-3xl md:text-7xl font-bold">Система «Орда»</h1>
+                        <h1 class="text-3xl md:text-7xl font-bold">{{ $t('orda.info.title') }}</h1>
                         <div class="w-full border-b border-white"></div>
                         <router-link to="/team">
                             <div class="flex justify-between items-center">
