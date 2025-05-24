@@ -15,34 +15,34 @@
                 <div class="flex flex-col">
                     <p>{{ $t('team.info.experience') }}:</p>
                     <ul class="list-disc p-4">
-                        <li>Руководитель Управления образования г. Астана</li>
-                        <li>Академический директор Astana Garden School</li>
-                        <li>Директор школы-лицей #54</li>
-                        <li>Работа в РФМШ, НИШ и БИЛ</li>
+                        <li>{{ $t('team.info.founder-job-1') }}</li>
+                        <li>{{ $t('team.info.founder-job-2') }}</li>
+                        <li>{{ $t('team.info.founder-job-3') }}</li>
+                        <li>{{ $t('team.info.founder-job-4') }}</li>
                     </ul>
                 </div>
             </div>
             <h1 class="text-4xl font-bold my-8">{{ $t('team.info.filial-2') }}</h1>
 
-            <div class="flex flex-col md:flex-row justify-between gap-20">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.director')" :name="'Борлыкбаева Райхан'"
-                    :job="t('team.info.director-title')" :description="t('team.info.director-jobs')">
+                    :job="t('team.info.director-title')" :description1="t('team.info.director-job-1')" :description2="t('team.info.director-job-2')" :description3="t('team.info.director-job-3')"  :description4="t('team.info.director-job-4')">
                     <img class="w-full rounded-xl" src="../assets/team-5.png" alt="">
                 </jobCard>
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.co-study-director')"
                     :name="'Каримова Динара Тахировна'" :job="t('team.info.co-study-director-title')"
-                    :description="t('team.info.co-study-director-jobs')">
+                    :description1="t('team.info.co-study-director-job-1')" :description2="t('team.info.co-study-director-job-2')" :description3="t('team.info.co-study-director-job-3')" :description4="t('team.info.co-study-director-job-4')" :description5="t('team.info.co-study-director-job-5')">
                     <img class="w-full rounded-xl" src="../assets/team-4.png" alt="">
                 </jobCard>
             </div>
             <h1 class="text-4xl font-bold my-8">{{ $t('team.info.filial-1') }}</h1>
-            <div class="flex flex-col md:flex-row justify-between gap-20 mb-10">
+            <div class="flex flex-col md:flex-row justify-between gap-8 mb-10">
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.director')" :name="'Абитаева Малика'"
-                    :job="$t('team.info.founder-title')" :description="t('team.info.director-jobs-2')">
+                    :job="$t('team.info.founder-title')" :description1="t('team.info.director-jobs-1')" :description2="t('team.info.director-jobs-2')" :description3="t('team.info.director-jobs-3')" :description4="t('team.info.director-jobs-4')">
                     <img class="w-full rounded-xl" src="../assets/team-2.png" alt="">
                 </jobCard>
                 <jobCard class="w-full md:w-1/2" :position="t('team.info.co-director')" :name="'Тенел Колбайкызы'"
-                    :job="t('team.info.co-director-title')" :description="t('team.info.co-director-jobs')">
+                    :job="t('team.info.co-director-title')" :description1="t('team.info.co-director-job')" :description2="t('team.info.co-director-job-1')" :description3="t('team.info.co-director-job-2')">
                     <img class="w-full rounded-xl" src="../assets/team-3.png" alt="">
                 </jobCard>
             </div>

@@ -16,12 +16,15 @@
                 </div>
             </div>
 
-
-            <div class="flex flex-col gap-2">
-                <p>{{ $t('team.info.experience') }}:</p>
-                <p>
-                    {{ props.description }}
-                </p>
+            <div class="flex flex-col mt-2">
+                <p class="font-bold">{{ $t('team.info.experience') }}:</p>
+                <ul class="list-disc p-4">
+                    <li>{{description1}}</li>
+                    <li>{{description2}}</li>
+                    <li>{{description3}}</li>
+                    <li v-if="description4">{{description4}}</li>
+                    <li v-if="description5">{{description5}}</li>
+                </ul>
             </div>
 
         </div>
@@ -32,6 +35,11 @@ const props = defineProps({
     position: String,
     name: String,
     job: String,
-    description: String,
+    description1: String,
+    description2: String,
+    description3: String,
+    description4: String,
+    description5: String,
+
 });
 </script>

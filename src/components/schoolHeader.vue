@@ -115,7 +115,6 @@ watch(selectedLang, (newLang) => {
                         <li class="pl-6">
                             <router-link to="/orda" class="hover:text-orange-500" active-class="text-orange-500">{{ $t('orda.info.title') }}</router-link>
                         </li>
-
                         <li class="font-bold mt-4">
                             <router-link to="/price" class="hover:text-orange-500" active-class="text-orange-500">{{
                                 $t('payment.hero.title') }}</router-link>
@@ -127,7 +126,6 @@ watch(selectedLang, (newLang) => {
                     </ul>
                 </nav>
             </div>
-
             <!-- Bottom Section -->
             <div class="p-6 flex justify-between">
                 <div>
