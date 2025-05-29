@@ -28,9 +28,9 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-
+import { computed } from 'vue';
 const { t } = useI18n();
-const steps = [
+const steps = computed(() => [
     {
         title: t('admissions.step1'),
         description: t('admissions.step1-text'),
@@ -47,7 +47,7 @@ const steps = [
         title: t('admissions.step4'),
         description: t('admissions.step4-text')
     }
-];
+]);
 </script>
 
 <style scoped></style>
