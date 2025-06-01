@@ -116,7 +116,7 @@
             </div>
 
             <div class="w-5/7 mt-10">
-                <h3 class="my-4 text-3xl font-bold">{{ $t('payment.info.details-title') }}:</h3>
+                <h3 class="my-4 text-3xl font-bold">{{ $t('payment.info.details-not-title') }}:</h3>
                 <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
                 <div class="flex gap-2 mt-8">
                     <div class="w-1/2 flex items-start">

@@ -6,7 +6,8 @@
             <div class="w-full flex flex-col justify-end text-white gap-14 md:gap-24 mt-26 py-4 z-9">
                 <div>
                     <p @click="router.go(-1)" class="hidden md:flex cursor-pointer">← {{ $t('globalWords.main') }}</p>
-                    <p @click="router.go(-1)" class="md:hidden flex cursor-pointer">← {{ $t('globalWords.main-adaptive') }}</p>
+                    <p @click="router.go(-1)" class="md:hidden flex cursor-pointer">← {{ $t('globalWords.main-adaptive')
+                        }}</p>
                 </div>
                 <div class="flex justify-between">
                     <div class="flex flex-col gap-4">
@@ -28,8 +29,12 @@
                         <div class="w-full border-b border-white"></div>
                     </div>
                     <div class="hidden md:flex flex gap-2 items-center">
-                        <img class="w-15 h-15" src="../assets/insta_white.svg" alt="">
-                        <img class="w-15 h-15" src="../assets/whatsup_white.svg" alt="">
+                        <a href="https://www.instagram.com/qadamschool?igsh=cHFneHYzYWc2cXZ5">
+                            <img class="w-15 h-15" src="../assets/insta_white.svg" alt="">
+                        </a>
+                        <a href="https://wa.me/+77003357676">
+                            <img class="w-15 h-15" src="../assets/whatsup_white.svg" alt="">
+                        </a>
                         <img class="w-15 h-15" src="../assets/youtube_white.svg" alt="">
                     </div>
                 </div>
