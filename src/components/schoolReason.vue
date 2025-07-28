@@ -4,8 +4,8 @@
             <!-- Header Section -->
             <div class="flex justify-between items-center mb-8">
                 <h1 class="text-4xl font-bold">{{ $t('reason.title') }} Qadam School?</h1>
-                <button
-                    class="hidden md:block bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                <button @click="handleShowModal"
+                    class="cursor-pointer hidden md:block bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded cursor-pointer">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -73,10 +73,18 @@
                     <li>✦ {{ $t('reason.history') }}</li>
                 </ul>
             </div>
-            <button
-                class="my-4 w-full flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+            <button @click="handleShowModal"
+                class="cursor-pointer my-4 w-full flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
                 {{ $t('main-btn') }}
             </button>
         </div>
     </div>
 </template>
+<script setup>
+const emit = defineEmits();
+
+const handleShowModal = () => {
+    console.log('showModal')
+    emit('showModal');
+};
+</script>

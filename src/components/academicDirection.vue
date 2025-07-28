@@ -5,8 +5,8 @@
                 <h2 class="text-3xl font-bold">
                     <span class="text-orange-500">{{$t('academic.directions.keys')}}</span> {{$t('academic.directions.title')}}
                 </h2>
-                <button
-                    class="hidden md:flex bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                <button @click="handleShowModal"
+                    class="cursor-pointer hidden md:flex bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -54,8 +54,8 @@
                         {{$t('academic.directions.project-body')}}
                     </p>
                 </div>
-                <button
-                    class="flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                <button @click="handleShowModal"
+                    class="cursor-pointer flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -64,7 +64,13 @@
 
 </template>
 
-<script>
+<script setup>
+const emit = defineEmits();
+
+const handleShowModal = () => {
+    console.log('showModal')
+    emit('showModal');
+};
 </script>
 
 <style scoped></style>

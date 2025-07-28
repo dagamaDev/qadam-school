@@ -8,6 +8,12 @@ import shoolAdmissions from '../components/shoolAdmissions.vue';
 import schoolLife from '../components/schoolLife.vue';
 import schoolQuestions from '../components/schoolQuestions.vue';
 import schoolFooter from '../components/schoolFooter.vue';
+import Modal from '../components/popUp.vue'
+import { ref } from 'vue';
+const showModal = ref(false);
+const openModal = () => {
+    showModal.value = true;
+}
 </script>
 
 <template>
@@ -15,7 +21,7 @@ import schoolFooter from '../components/schoolFooter.vue';
         <div class="relative">
             <schoolHeader />
             <img class="w-full h-screen object-cover" src="../assets/IMG_2336.png" alt="School Image">
-            <heroInfo />
+            <heroInfo @showModal="openModal"/>
         </div>
         <div class="w-full flex justify-center absolute bottom-15">
             <schoolQualities />
@@ -24,7 +30,7 @@ import schoolFooter from '../components/schoolFooter.vue';
             <schoolNews />
         </div>
         <div class="mt-20">
-            <schoolReason />
+            <schoolReason @showModal="openModal"/>
         </div>
         <div class="mt-20">
             <shoolAdmissions />
@@ -38,7 +44,16 @@ import schoolFooter from '../components/schoolFooter.vue';
             </div>
         </div>
         <div>
-            <schoolFooter/>
+            <schoolFooter />
         </div>
+        <Modal v-if="showModal" @close="showModal = false">
+            <p>This is the modal content.</p>
+            <template #footer>
+                <div class="flex justify-end gap-2">
+                    <button class="px-4 py-2 bg-gray-200 rounded" @click="showModal = false">Cancel</button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded">Save</button>
+                </div>
+            </template>
+        </Modal>
     </div>
 </template>

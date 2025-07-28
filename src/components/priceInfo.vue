@@ -105,8 +105,8 @@
                         </div>
                         <div class="flex flex-col gap-4 items-center">
                             <p>{{ $t('payment.info.full') }}</p>
-                            <button
-                                class="bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                            <button @click="handleShowModal"
+                                class="cursor-pointer bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
                                 {{ $t('main-btn') }}
                             </button>
                         </div>
@@ -118,7 +118,7 @@
             <div class="w-5/7 mt-10">
                 <h3 class="my-4 text-3xl font-bold">{{ $t('payment.info.details-not-title') }}:</h3>
                 <div class="w-full border-b border-[#D9DEE4] mb-4"></div>
-                <div class="flex gap-2 mt-8">
+                <div class="flex-col md:flex gap-2 mt-8">
                     <div class="w-1/2 flex items-start">
                         <img class="p-1 pr-2" src="../assets/price-3.svg" alt="">
 
@@ -139,3 +139,11 @@
         </div>
     </div>
 </template>
+<script setup>
+const emit = defineEmits();
+
+const handleShowModal = () => {
+    console.log('showModal')
+    emit('showModal');
+};
+</script>

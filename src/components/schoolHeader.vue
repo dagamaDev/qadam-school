@@ -57,7 +57,7 @@ watch(selectedLang, (newLang) => {
                 <p>+7 775 007 23 77</p>
                 <div class="relative">
                     <select v-model="selectedLang"
-                        class="bg-transparent border border-white text-white px-2 py-1 rounded-md focus:outline-none">
+                        class="bg-transparent border  border-white text-white px-2 py-1 rounded-md focus:outline-none">
                         <option v-for="lang in availableLangs" :key="lang.code" :value="lang.code" class="text-black">
                             {{ lang.label }}
                         </option>

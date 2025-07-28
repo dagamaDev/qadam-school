@@ -6,7 +6,7 @@
                 <div class="hidden md:flex flex-col gap-4">
                     <button
                         class="bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
-                    <button class="border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
+                    <button @click="handleShowModal" class="border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
                 </div>
             </div>
             <div class="w-full md:w-4/7 class flex flex-col gap-4">
@@ -19,8 +19,16 @@
             <div class="flex md:hidden flex-col gap-2">
                     <button
                         class="bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
-                    <button class="border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
+                    <button @click="handleShowModal" class="cursor-pointer border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
                 </div>
         </div>
     </div>
 </template>
+<script setup>
+const emit = defineEmits();
+
+const handleShowModal = () => {
+    console.log('showModal')
+    emit('showModal');
+};
+</script>

@@ -6,7 +6,7 @@
                 <div class="flex flex-col md:flex-row justify-evenly gap-4">
                     <img class="w-1/2 rounded-xl" src="../assets/team-main.png" alt="">
                     <div class="flex flex-col justify-center">
-                        <h4 class="uppercase text-[#E87C43] font-semibold text-sm">{{ $t('team.info.founder') }}</h4>
+                        <h4 class="uppercase text-[#E87C43] font-semibold text-xl">{{ $t('team.info.founder') }}</h4>
                         <h3 class="text-2xl font-bold">Сейсенбай Шакарим</h3>
                         <p>{{ $t('team.info.founder-title') }}</p>
                     </div>
