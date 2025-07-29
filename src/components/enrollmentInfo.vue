@@ -2,8 +2,8 @@
     <div class="w-full flex justify-center">
         <div class="bg-white md:p-8 p-1 w-full md:w-3/4 px-4 md:px-0">
             <div>
-                <h1 class="text-3xl font-bold">Как поступить в Qadam School?</h1>
-                <p>Мы сделали процесс поступления простым и удобным!</p>
+                <h1 class="text-3xl font-bold">{{ $t('enrollment.hero.title') }} Qadam School?</h1>
+                <p>{{ $t('enrollment.info.text') }}</p>
             </div>
             <div class="flex flex-col gap-10 mt-8">
                 <!-- Step Component -->
@@ -19,7 +19,7 @@
                         <p>
                             {{ $t('enrollment.info.request-text') }}
                         </p>
-                        <button
+                        <button @click="handleShowModal"
                             class="w-full md:w-auto bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded self-start">
                             {{ $t('enrollment.info.request-btn') }}
                         </button>
@@ -75,3 +75,10 @@
         </div>
     </div>
 </template>
+<script setup>
+const emit = defineEmits();
+
+const handleShowModal = () => {
+    emit('showModal');
+};
+</script>
