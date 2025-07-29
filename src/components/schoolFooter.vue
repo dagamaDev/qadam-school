@@ -7,12 +7,12 @@
                 </div>
                 <div class="text-white flex flex-col justify-between">
                     <div>
-                        <h6 class="font-bold mb-3">{{$t('footer.address')}}</h6>
-                        <p>{{$t('footer.address1')}}</p>
-                        <p>{{$t('footer.address2')}} 19\1</p>
+                        <h6 class="font-bold mb-3">{{ $t('footer.address') }}</h6>
+                        <p>{{ $t('footer.address1') }}</p>
+                        <p>{{ $t('footer.address2') }} 19\1</p>
                     </div>
                     <div>
-                        <h6 class="font-bold mb-3">{{$t('footer.contacts')}}</h6>
+                        <h6 class="font-bold mb-3">{{ $t('footer.contacts') }}</h6>
                         <div>
                             <div class="flex gap-2 mb-1">
                                 <img src="../assets/Group.svg" alt="">
@@ -25,11 +25,18 @@
                         </div>
                     </div>
                     <div>
-                        <h6 class="font-bold mb-3">{{$t('footer.social')}}</h6>
+                        <h6 class="font-bold mb-3">{{ $t('footer.social') }}</h6>
                         <div class="flex gap-2">
-                            <img src="../assets/Frame 84.svg" alt="">
-                            <img src="../assets/Frame 85.svg" alt="">
-                            <img src="../assets/Frame 86.svg" alt="">
+                            <a href="https://www.instagram.com/qadamschool">
+                                <img src="../assets/Frame 84.svg" alt="instagram">
+                            </a>
+                            <a href="https://wa.me/77001234567">
+                                <img src="../assets/Frame 85.svg" alt="watsup">
+                            </a>
+
+                            <a href="https://www.youtube.com/">
+                                <img src="../assets/Frame 86.svg" alt="youtube">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -43,18 +50,18 @@
                     <p class="text-[#B4B4B4]">© Qadam School, 2025</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p>{{$t('footer.mission')}}</p>
-                    <p>{{$t('footer.command')}}</p>
-                    <p>{{$t('footer.parents')}}</p>
+                    <p>{{ $t('footer.mission') }}</p>
+                    <p>{{ $t('footer.command') }}</p>
+                    <p>{{ $t('footer.parents') }}</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p>{{$t('footer.program')}}</p>
-                    <p>{{$t('footer.extra')}}</p>
-                    <p>{{$t('footer.system')}}</p>
+                    <p>{{ $t('footer.program') }}</p>
+                    <p>{{ $t('footer.extra') }}</p>
+                    <p>{{ $t('footer.system') }}</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <p>{{$t('footer.payment')}}</p>
-                    <p>{{$t('footer.enrollment')}}</p>
+                    <p>{{ $t('footer.payment') }}</p>
+                    <p>{{ $t('footer.enrollment') }}</p>
                 </div>
             </div>
         </div>
