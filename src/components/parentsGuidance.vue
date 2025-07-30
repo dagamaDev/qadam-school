@@ -5,8 +5,8 @@
                 <h1 class="text-4xl md:text-5xl font-bold">{{ $t("parents.title") }}</h1>
                 <div class="hidden md:flex flex-col gap-4">
                     <button @click="downloadFile"
-                        class="bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
-                    <button @click="handleShowModal" class="border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
+                        class="cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
+                    <button @click="handleShowModal" class="cursor-pointer border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
                 </div>
             </div>
             <div class="w-full md:w-4/7 class flex flex-col gap-4">
@@ -18,7 +18,7 @@
             </div>
             <div class="flex md:hidden flex-col gap-2">
                     <button @click="downloadFile"
-                        class="bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
+                        class="cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
                     <button @click="handleShowModal" class="cursor-pointer border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
                 </div>
         </div>
