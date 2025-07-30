@@ -20,7 +20,7 @@
                         <h3 class="text-2xl font-bold mt-4">
                             {{ $t('reason.interesting') }}
                         </h3>
-                        <button class="hidden md:block mt-4 border border-black px-4 py-2 rounded-md font-semibold">
+                        <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer active:scale-95 duration-100 ease-in-out cursor-pointer hidden md:block mt-4 border border-black px-4 py-2 rounded-md font-semibold">
                             {{ $t('reason.program') }}
                         </button>
                         <div class="flex justify-end">
@@ -53,7 +53,7 @@
                     <h3 class="text-2xl font-bold mt-4">
                         <span class="text-orange-500">{{ $t('reason.types') }}</span> {{ $t('reason.choose') }}
                     </h3>
-                    <button class="hidden md:blockmt-4 border border-black px-4 py-2 rounded-md font-semibold">
+                    <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer hidden md:blockmt-4 border border-black px-4 py-2 rounded-md font-semibold">
                         {{ $t('reason.more') }}
                     </button>
                 </div>
@@ -74,7 +74,7 @@
                 </ul>
             </div>
             <button @click="handleShowModal"
-                class="cursor-pointer my-4 w-full flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                class="transition active:scale-95 duration-100 ease-in-out cursor-pointer my-4 w-full flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
                 {{ $t('main-btn') }}
             </button>
         </div>

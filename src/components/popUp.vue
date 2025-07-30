@@ -10,7 +10,7 @@
                             <h2 class="text-2xl font-extrabold text-black leading-snug">{{ $t('modal.send-request') }}</h2>
                             <p class="text-black text-lg font-bold">{{ $t('modal.contact-you') }}</p>
                         </div>
-                        <button @click="closeModal" class="text-black text-2xl font-bold">&times;</button>
+                        <button @click="closeModal" class="transition active:scale-95 duration-100 ease-in-out cursor-pointer text-black text-2xl font-bold">&times;</button>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
                     <!-- Submit -->
                     <div>
                         <button @click="sendToWhatsApp"
-                            class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
+                            class="transition active:scale-95 duration-100 ease-in-out cursor-pointer w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-900">
                             {{ $t('question.send-request') }}
                         </button>
                     </div>

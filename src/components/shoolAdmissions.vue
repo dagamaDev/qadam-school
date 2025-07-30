@@ -6,7 +6,7 @@
                     {{ $t('admissions.title') }}<span class="text-orange-500">Qadam School?</span>
                 </h1>
                 <button
-                    class="hidden md:block border border-black px-4 py-2 rounded-md font-semibold hover:bg-gray-100">
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer hidden md:block border border-black px-4 py-2 rounded-md font-semibold hover:bg-gray-100">
                     {{ $t('reason.more') }}
                 </button>
             </div>

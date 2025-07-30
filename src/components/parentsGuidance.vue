@@ -5,8 +5,15 @@
                 <h1 class="text-4xl md:text-5xl font-bold">{{ $t("parents.title") }}</h1>
                 <div class="hidden md:flex flex-col gap-4">
                     <button @click="downloadFile"
-                        class="cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
-                    <button @click="handleShowModal" class="cursor-pointer border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">
+                        {{ $t("parents.download") }}
+                    </button>
+
+                    <!-- Modal Button -->
+                    <button @click="handleShowModal"
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer border rounded-lg bg-white px-8 py-2">
+                        {{ $t('main-btn') }}
+                    </button>
                 </div>
             </div>
             <div class="w-full md:w-4/7 class flex flex-col gap-4">
@@ -17,10 +24,15 @@
                 <p>{{ $t("parents.info.read") }}</p>
             </div>
             <div class="flex md:hidden flex-col gap-2">
-                    <button @click="downloadFile"
-                        class="cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">{{ $t("parents.download") }}</button>
-                    <button @click="handleShowModal" class="cursor-pointer border rounded-lg bg-white px-8 py-2">{{$t('main-btn')}}</button>
-                </div>
+                <button @click="downloadFile"
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">
+                    {{ $t("parents.download") }}
+                </button>
+                <button @click="handleShowModal"
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer border rounded-lg bg-white px-8 py-2">
+                    {{ $t('main-btn') }}
+                </button>
+            </div>
         </div>
     </div>
 </template>
@@ -41,7 +53,7 @@ const downloadFile = () => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    } else if(lang === 'ru'){
+    } else if (lang === 'ru') {
         const link = document.createElement('a');
         link.href = 'https://drive.google.com/uc?export=download&id=1xvn_yFe50IBrB0w54IlJkavdGUC_UF0L';
         link.download = 'document.pdf';

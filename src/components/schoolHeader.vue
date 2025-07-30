@@ -44,7 +44,7 @@ watch(selectedLang, (newLang) => {
 
         <!-- Desktop: Show full content -->
         <div class="hidden md:flex items-center gap-4 w-full justify-between">
-            <button class="flex items-center gap-2 border border-white text-white px-4 py-2 rounded-md">
+            <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex items-center gap-2 border border-white text-white px-4 py-2 rounded-md">
                 {{ $t('header.parent-portal') }}
                 <img src="../assets/login.svg" alt="">
             </button>
@@ -66,7 +66,7 @@ watch(selectedLang, (newLang) => {
             </div>
         </div>
 
-        <button @click="toggleMenu" class="md:ml-10 ml-0">
+        <button @click="toggleMenu" class="md:ml-10 ml-0 transition active:scale-95 duration-100 ease-in-out cursor-pointer">
             <img class="w-8" src="../assets/burger.svg" alt="Menu">
         </button>
     </header>
@@ -79,7 +79,7 @@ watch(selectedLang, (newLang) => {
             <div>
                 <div class="p-6 flex justify-between items-center border-b">
                     <img src="../assets/logo-dark.svg" alt="Qadam Logo" class="h-10">
-                    <button @click="toggleMenu" class="text-black text-2xl">✖</button>
+                    <button @click="toggleMenu" class="transition active:scale-95 duration-100 ease-in-out cursor-pointer text-black text-2xl">✖</button>
                 </div>
 
                 <nav class="p-6">

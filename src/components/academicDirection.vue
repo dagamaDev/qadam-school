@@ -6,7 +6,7 @@
                     <span class="text-orange-500">{{$t('academic.directions.keys')}}</span> {{$t('academic.directions.title')}}
                 </h2>
                 <button @click="handleShowModal"
-                    class="cursor-pointer hidden md:flex bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer hidden md:flex bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
                     {{ $t('main-btn') }}
                 </button>
             </div>
@@ -55,7 +55,7 @@
                     </p>
                 </div>
                 <button @click="handleShowModal"
-                    class="cursor-pointer flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex justify-center md:hidden bg-gradient-to-r from-orange-400 to-yellow-300 text-black font-semibold px-6 py-3 rounded-lg shadow-md">
                     {{ $t('main-btn') }}
                 </button>
             </div>

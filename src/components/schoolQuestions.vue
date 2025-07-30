@@ -26,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="submit-button">{{ $t('question.send-request') }}</button>
+                    <button type="submit" class="transition active:scale-95 duration-100 ease-in-out submit-button">{{ $t('question.send-request') }}</button>
                 </form>
             </div>
 

@@ -6,7 +6,7 @@
         <div class="p-3">
             <p class="mb-6">Дәстүрге арналған ауызашарда оқушыларымыздың әкелерімен бас қостық! ...</p>
             <div class="flex items-center justify-between">
-                <button class="flex items-ceenter gap-2 border py-1 px-3 rounded-full">
+                <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex items-ceenter gap-2 border py-1 px-3 rounded-full">
                     <img src="../assets/insta.svg" alt="">
                     <p>qadamschool</p>
                 </button>

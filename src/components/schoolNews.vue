@@ -5,7 +5,7 @@
             <div class="w-3/4">
                 <div class="flex justify-between items-center mb-8">
                     <h1 class="text-4xl font-bold">{{ $t('news.title') }}</h1>
-                    <button class="hidden md:block border border-black px-4 py-2 rounded-md">
+                    <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer hidden md:block border border-black px-4 py-2 rounded-md">
                         {{ $t('news.all') }}
                     </button>
                 </div>
@@ -18,7 +18,7 @@
                 <!-- Left Arrow -->
                 <div class="absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 p-2">
                     <button @click="scrollLeft"
-                        class="  z-10 bg-white p-2 px-3  shadow-md rounded-full text-xl">
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3  shadow-md rounded-full text-xl">
                         ‹
                     </button>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2 p-2">
 
                 <button @click="scrollRight"
-                    class="z-10 bg-white p-2 px-3 shadow-md rounded-full text-xl">
+                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3 shadow-md rounded-full text-xl">
                     ›
                 </button>
                 </div>

@@ -106,7 +106,7 @@
                         <div class="flex flex-col gap-4 items-center">
                             <p>{{ $t('payment.info.full') }}</p>
                             <button @click="handleShowModal"
-                                class="cursor-pointer bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
+                                class="transition active:scale-95 duration-100 ease-in-out cursor-pointer bg-gradient-to-r w-full from-orange-400 to-yellow-400 text-black font-semibold px-4 py-2 rounded">
                                 {{ $t('main-btn') }}
                             </button>
                         </div>
