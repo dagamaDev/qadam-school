@@ -34,16 +34,16 @@ const handleShowModal = () => {
 const downloadFile = () => {
     console.log('download')
     const lang = localStorage.getItem('lang');
-    if (lang === 'ru') {
+    if (lang === 'kz') {
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1xvn_yFe50IBrB0w54IlJkavdGUC_UF0L';
+        link.href = 'https://drive.google.com/uc?export=download&id=1NLrSOrIByAb-4JjmiR95GzPfeWrlDYn7';
         link.download = 'document.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    } else if(lang === 'kz'){
+    } else if(lang === 'ru'){
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1NLrSOrIByAb-4JjmiR95GzPfeWrlDYn7/view?usp=drivesdk';
+        link.href = 'https://drive.google.com/uc?export=download&id=1xvn_yFe50IBrB0w54IlJkavdGUC_UF0L';
         link.download = 'document.pdf';
         document.body.appendChild(link);
         link.click();
