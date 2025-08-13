@@ -46,7 +46,7 @@ const name = ref('');
 const phone = ref('');
 
 function sendToWhatsApp() {
-    const targetNumber = '77001234567';
+    const targetNumber = '77003357676';
     const message = `Имя: ${name.value}\nТелефон: ${phone.value}\nИнтересует Qadam School.`;
 
     const encodedMessage = encodeURIComponent(message);

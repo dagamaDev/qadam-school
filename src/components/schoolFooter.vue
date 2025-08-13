@@ -30,7 +30,7 @@
                             <a href="https://www.instagram.com/qadamschool">
                                 <img src="../assets/Frame 84.svg" alt="instagram">
                             </a>
-                            <a href="https://wa.me/77001234567">
+                            <a href="https://wa.me/77003357676">
                                 <img src="../assets/Frame 85.svg" alt="watsup">
                             </a>
 

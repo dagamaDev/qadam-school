@@ -39,12 +39,14 @@ watch(selectedLang, (newLang) => {
         </div>
         <!-- Mobile: Only show logo and menu -->
         <RouterLink to="/" class="md:hidden">
-            <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo" class="h-8">
+            <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo"
+                class="h-8 w-auto max-w-full object-contain">
         </RouterLink>
 
         <!-- Desktop: Show full content -->
         <div class="hidden md:flex items-center gap-4 w-full justify-between">
-            <button class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex items-center gap-2 border border-white text-white px-4 py-2 rounded-md">
+            <button
+                class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex items-center gap-2 border border-white text-white px-4 py-2 rounded-md">
                 {{ $t('header.parent-portal') }}
                 <img src="../assets/login.svg" alt="">
             </button>
@@ -66,7 +68,8 @@ watch(selectedLang, (newLang) => {
             </div>
         </div>
 
-        <button @click="toggleMenu" class="md:ml-10 ml-0 transition active:scale-95 duration-100 ease-in-out cursor-pointer">
+        <button @click="toggleMenu"
+            class="md:ml-10 ml-0 transition active:scale-95 duration-100 ease-in-out cursor-pointer">
             <img class="w-8" src="../assets/burger.svg" alt="Menu">
         </button>
     </header>
@@ -79,7 +82,8 @@ watch(selectedLang, (newLang) => {
             <div>
                 <div class="p-6 flex justify-between items-center border-b">
                     <img src="../assets/logo-dark.svg" alt="Qadam Logo" class="h-10">
-                    <button @click="toggleMenu" class="transition active:scale-95 duration-100 ease-in-out cursor-pointer text-black text-2xl">✖</button>
+                    <button @click="toggleMenu"
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer text-black text-2xl">✖</button>
                 </div>
 
                 <nav class="p-6">
@@ -113,7 +117,8 @@ watch(selectedLang, (newLang) => {
                                 $t('extra.hero.title') }}</router-link>
                         </li>
                         <li class="pl-6">
-                            <router-link to="/orda" class="hover:text-orange-500" active-class="text-orange-500">{{ $t('orda.info.title') }}</router-link>
+                            <router-link to="/orda" class="hover:text-orange-500" active-class="text-orange-500">{{
+                                $t('orda.info.title') }}</router-link>
                         </li>
                         <li class="font-bold mt-4">
                             <router-link to="/price" class="hover:text-orange-500" active-class="text-orange-500">{{

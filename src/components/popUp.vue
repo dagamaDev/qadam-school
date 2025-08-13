@@ -82,7 +82,7 @@ const closeModal = () => {
     emit('close');
 };
 function sendToWhatsApp() {
-    const targetNumber = '77001234567';
+    const targetNumber = '77003357676';
     const grades = selected.value.length > 0 ? selected.value.join(', ') : 'Не выбран';
 
     const message = `Имя: ${name.value}\nТелефон: ${phone.value}\nКлассы: ${grades}\nИнтересует Qadam School.`;
