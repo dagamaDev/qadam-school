@@ -10,10 +10,16 @@
                     <img src="../assets/insta.svg" alt="">
                     <p>qadamschool</p>
                 </button>
-                <p>01.01.2025</p>
+                <p>{{newsDate}}</p>
             </div>
         </div>
     </a>
 </template>
 <script setup>
+const props = defineProps({
+  newsDate: {
+    type: String,
+    required: true,
+  },
+});
 </script>

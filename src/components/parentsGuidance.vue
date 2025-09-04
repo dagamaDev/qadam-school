@@ -8,8 +8,6 @@
                         class="transition active:scale-95 duration-100 ease-in-out cursor-pointer bg-gradient-to-r w-full from-orange-400 rounded-lg to-yellow-400 bg-white px-8 py-2">
                         {{ $t("parents.download") }}
                     </button>
-
-                    <!-- Modal Button -->
                     <button @click="handleShowModal"
                         class="transition active:scale-95 duration-100 ease-in-out cursor-pointer border rounded-lg bg-white px-8 py-2">
                         {{ $t('main-btn') }}
@@ -37,29 +35,31 @@
     </div>
 </template>
 <script setup>
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
 const emit = defineEmits();
 
 const handleShowModal = () => {
-    console.log('showModal')
-    emit('showModal');
+  emit("showModal");
 };
+
 const downloadFile = () => {
-    console.log('download')
-    const lang = localStorage.getItem('lang');
-    if (lang === 'kz') {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1NLrSOrIByAb-4JjmiR95GzPfeWrlDYn7';
-        link.download = 'document.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    } else if (lang === 'ru') {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1xvn_yFe50IBrB0w54IlJkavdGUC_UF0L';
-        link.download = 'document.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+  const lang = locale.value; 
+  let fileId = null;
+
+  if (lang === "kz") {
+    fileId = "1NLrSOrIByAb-4JjmiR95GzPfeWrlDYn7";
+  } else if (lang === "ru") {
+    fileId = "1xvn_yFe50IBrB0w54IlJkavdGUC_UF0L";
+  }
+
+  if (fileId) {
+    const link = document.createElement("a");
+    link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+    link.download = "document.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 };
 </script>

@@ -8,15 +8,13 @@ const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
 
-// i18n
 const { locale } = useI18n();
 const availableLangs = [
-    { code: "ru", label: "РУС" },
-    { code: "kz", label: "ҚАЗ" }
+    { code: "kz", label: "ҚАЗ" },
+    { code: "ru", label: "РУС" }
 ];
 
-// Load default language from localStorage or fallback to 'ru'
-const selectedLang = ref(localStorage.getItem("lang") || "ru");
+const selectedLang = ref(localStorage.getItem("lang") || "kz");
 locale.value = selectedLang.value;
 
 watch(selectedLang, (newLang) => {
@@ -26,7 +24,6 @@ watch(selectedLang, (newLang) => {
 </script>
 
 <template>
-    <!-- Header -->
     <header
         class="fixed top-0 left-0 w-full px-6 py-4 md:px-10 md:py-6 flex items-center header justify-between border-b border-white z-50 bg-transparent">
         <div class="relative md:hidden">
@@ -37,13 +34,11 @@ watch(selectedLang, (newLang) => {
                 </option>
             </select>
         </div>
-        <!-- Mobile: Only show logo and menu -->
         <RouterLink to="/" class="md:hidden">
             <img src="../assets/logo_color_white_svg 1.svg" alt="School Logo"
                 class="h-8 w-auto max-w-full object-contain">
         </RouterLink>
 
-        <!-- Desktop: Show full content -->
         <div class="hidden md:flex items-center gap-4 w-full justify-between">
             <button
                 class="transition active:scale-95 duration-100 ease-in-out cursor-pointer flex items-center gap-2 border border-white text-white px-4 py-2 rounded-md">

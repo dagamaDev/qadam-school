@@ -18,40 +18,39 @@
                 <!-- Left Arrow -->
                 <div class="absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 p-2">
                     <button @click="scrollLeft"
-                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3  shadow-md rounded-full text-xl">
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3 shadow-md rounded-full text-xl">
                         ‹
                     </button>
                 </div>
 
                 <!-- Scrollable container -->
                 <div ref="carousel" class="flex gap-8 overflow-x-auto scroll-smooth no-scrollbar">
-                    <newsCard>
+                    <newsCard :news-date="formatDate(0)">
                         <img class="w-full h-full rounded-t-xl object-cover" src="../assets/carousel_1.png" alt="">
                     </newsCard>
-                    <newsCard>
+                    <newsCard :news-date="formatDate(3)">
                         <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_2.png" alt="">
                     </newsCard>
-                    <newsCard>
+                    <newsCard :news-date="formatDate(5)">
                         <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
                     </newsCard>
-                    <newsCard>
+                    <newsCard :news-date="formatDate(5)">
                         <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
                     </newsCard>
-                    <newsCard>
+                    <newsCard :news-date="formatDate(7)">
                         <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_3.png" alt="">
                     </newsCard>
-                    <newsCard>
+                    <newsCard :news-date="formatDate(7)">
                         <img class="w-full h-full object-cover rounded-t-xl" src="../assets/carousel_4.png" alt="">
                     </newsCard>
                 </div>
 
                 <!-- Right Arrow -->
                 <div class="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2 p-2">
-
-                <button @click="scrollRight"
-                    class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3 shadow-md rounded-full text-xl">
-                    ›
-                </button>
+                    <button @click="scrollRight"
+                        class="transition active:scale-95 duration-100 ease-in-out cursor-pointer z-10 bg-white p-2 px-3 shadow-md rounded-full text-xl">
+                        ›
+                    </button>
                 </div>
             </div>
         </div>
@@ -70,6 +69,12 @@ const scrollLeft = () => {
 
 const scrollRight = () => {
     carousel.value.scrollBy({ left: 300, behavior: 'smooth' })
+}
+
+const formatDate = (daysAgo) => {
+    const date = new Date()
+    date.setDate(date.getDate() - daysAgo)
+    return date.toLocaleDateString('ru-RU')
 }
 </script>
 
